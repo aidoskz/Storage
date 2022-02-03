@@ -1,0 +1,10 @@
+version: "3.2"
+services: 
+  app:
+    image: centos/php-56-centos7
+    volumes:
+      - "/home/user/Storage/:/opt/app-root/src/"
+    command: tail -f /dev/null
+    ports:
+      - 83:8080
+    
